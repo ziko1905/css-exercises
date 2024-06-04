@@ -1,0 +1,16 @@
+.nice {
+    font-family: Verdana, 'DejaVu Sans', sans-serif;
+    background-color: rgb(255, 0, 128)
+}
+.add {
+    font-size: 24px;
+}
+
+#unique1 {
+    color: rgb(87, 168, 223);
+    font-size: 32px;
+}
+#unique2 {
+    background-color: hsla(91, 80%, 48%, 0.452);
+    font-weight: bold;
+}
