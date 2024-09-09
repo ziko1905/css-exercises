@@ -39,6 +39,8 @@ button {
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+  transition: opacity 1s ease-in;
+  animation: drop-inverted 1s ease-in-out;
 }
 
 .popup-modal p {
@@ -56,8 +58,27 @@ button {
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
+  animation: drop 1s ease-in-out;
 }
 
 .backdrop.show {
   opacity: 30%;
+}
+
+@keyframes drop {
+  from {
+    transform: translate(-50%, -20vh);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes drop-inverted {
+  to {
+    transform: translate(-50%, -20vh);
+  }
+  from {
+    transform: translate(-50%, -50%);
+  }
 }
